@@ -25,4 +25,16 @@
             parent="menu_school_root"
             sequence="2"/>
 
+    <menuitem
+            id="menu_school_section_master"
+            name="Sections"
+            parent="menu_school_root"
+            sequence="3"/>
+
+    <menuitem
+            id="menu_school_section_master"
+            name="Sections"
+            parent="menu_school_root"
+            sequence="4"/>
+
 </odoo>

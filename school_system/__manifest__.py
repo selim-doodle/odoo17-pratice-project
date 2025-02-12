@@ -12,6 +12,7 @@
         'views/teacher.xml',
         'views/student.xml',
         'views/classroom.xml',
+        'views/section.xml',
         'security/ir.model.access.csv',
     ],
     'depends': [],
