@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
             <form>
                 <group>
-                    <field name="className"/>
+                    <field name="class_name"/>
                     <field name="no_of_capacity"/>
                 </group>
             </form>
@@ -20,7 +20,7 @@
         <field name="model">school.classroom</field>
         <field name="arch" type="xml">
             <tree sample="1">
-                <field name="className"/>
+                <field name="class_name"/>
                 <field name="no_of_capacity"/>
             </tree>
         </field>
