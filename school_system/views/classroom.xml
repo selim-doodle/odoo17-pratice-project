@@ -10,6 +10,7 @@
                 <group>
                     <field name="class_name"/>
                     <field name="no_of_capacity"/>
+                    <field name="start_date"/>
                 </group>
             </form>
         </field>
@@ -22,14 +23,45 @@
             <tree sample="1">
                 <field name="class_name"/>
                 <field name="no_of_capacity"/>
+                <field name="start_date"/>
             </tree>
+        </field>
+    </record>
+
+    <record id="view_school_classroom_graph" model="ir.ui.view">
+        <field name="name">school.classroom.graph</field>
+        <field name="model">school.classroom</field>
+        <field name="arch" type="xml">
+            <graph string="Classroom analysis">
+                <field name="no_of_capacity" type="row"/>
+                <field name="class_name" type="col"/>
+                <field name="id" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="school_classroom_calendar">
+        <field name="model">school.classroom</field>
+        <field name="arch" type="xml">
+            <calendar string="Scheduled Actions" date_start="start_date" color="class_name" mode="month">
+            </calendar>
+        </field>
+    </record>
+
+    <record id="view_school_classroom_search" model="ir.ui.view">
+        <field name="name">school.classroom.search</field>
+        <field name="model">school.classroom</field>
+        <field name="arch" type="xml">
+            <search string="Classroom search field">
+                <field name="class_name"/>
+            </search>
         </field>
     </record>
 
     <record id="action_school_classroom_view" model="ir.actions.act_window">
         <field name="name">Classroom info</field>
         <field name="res_model">school.classroom</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,calendar,graph</field>
         <field name="context">{}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
