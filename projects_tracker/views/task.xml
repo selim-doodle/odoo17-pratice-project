@@ -10,6 +10,7 @@
                 <sheet>
                     <group>
                         <field name="name"/>
+                        <field name="time_required"/>
                     </group>
                 </sheet>
             </form>
@@ -20,11 +21,13 @@
         <field name="name">project.task.tree</field>
         <field name="model">project.task</field>
         <field name="arch" type="xml">
-            <form>
+            <tree>
                 <field name="name"/>
-            </form>
+                <field name="time_required"/>
+            </tree>
         </field>
     </record>
+
 
     <record id="action_task" model="ir.actions.act_window">
         <field name="name">Tasks</field>
