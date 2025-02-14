@@ -1,1 +1,1 @@
-from . import teacher, student, Classroom, section
+from . import teacher, student, Classroom, section, course

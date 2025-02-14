@@ -11,3 +11,4 @@ class Teacher(models.Model):
     gender = fields.Selection(GENDER_SELECTION, string="Select Gender")
     department = fields.Char(string="Department")
     active = fields.Boolean(string="Archived", default="False")
+    course_ids = fields.One2many('school.course', 'teacher_id', string='Assigned courses')

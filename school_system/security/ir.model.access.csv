@@ -3,3 +3,4 @@ school_system.access_school_teacher,access_school_teacher,school_system.model_sc
 school_system.access_school_student,access_school_student,school_system.model_school_student,base.group_user,1,1,1,1
 school_system.access_school_classroom,access_school_classroom,school_system.model_school_classroom,base.group_user,1,1,1,1
 school_system.access_school_section,access_school_section,school_system.model_school_section,base.group_user,1,1,1,1
+school_system.access_school_course,access_school_course,school_system.model_school_course,base.group_user,1,1,1,1

@@ -16,6 +16,29 @@
                         <field name="department"/>
                         <field name="active" invisible="1"/>
                     </group>
+                    <notebook>
+                        <page name="public1" string="Work Information1">
+                            <field name="course_ids">
+                                <tree>
+                                    <field name="title"/>
+                                    <field name="duration"/>
+                                    <field name="capacity"/>
+                                </tree>
+                                <form>
+                                    <sheet>
+                                        <group>
+                                            <field name="title"/>
+                                            <field name="duration"/>
+                                            <field name="capacity"/>
+                                        </group>
+                                    </sheet>
+                                </form>
+                            </field>
+                        </page>
+                        <page name="public2" string="Work Information2">
+
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
@@ -75,6 +98,9 @@
                 <group expand="0" string="Group By">
                     <filter string="Gender group" name="group_by_gender" domain="[]" context="{'group_by':'gender'}"/>
                 </group>
+                <searchpanel>
+                    <field name="gender" select="multi" icon="fa-building" enable_counters="1"/>
+                </searchpanel>
             </search>
         </field>
     </record>
