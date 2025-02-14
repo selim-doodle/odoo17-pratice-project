@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="view_hospital_appointment_form" model="ir.ui.view">
+        <field name="name">hospital.appointment.form</field>
+        <field name="model">hospital.appointment</field>
+        <field name="arch" type="xml">
+            <form string="Appointment form">
+                <sheet>
+                    <group>
+                        <field name="patient_name"/>
+                        <field name="admitted"/>
+                        <field name="room_no"/>
+                    </group>
+                    <notebook>
+                        <page string="Sequence 1" name="sequence1">
+                            <field name="pharmacy_line_ids">
+                                <tree editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="price_unit"/>
+                                    <field name="qty"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <field name="product_id"/>
+                                        <field name="price_unit"/>
+                                        <field name="qty"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Sequence 2" name="sequence2">
+
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_hospital_appointment_tree" model="ir.ui.view">
+        <field name="name">hospital.appointment.tree</field>
+        <field name="model">hospital.appointment</field>
+        <field name="arch" type="xml">
+            <tree string="Appointment tree">
+                <field name="patient_name"/>
+                <field name="admitted"/>
+                <field name="room_no"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_hospital_appointment_view" model="ir.actions.act_window">
+        <field name="name">Appointment info</field>
+        <field name="res_model">hospital.appointment</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem
+            id="menu_hospital_appointment"
+            name="Appointment Info"
+            action="action_hospital_appointment_view"
+            parent="hospital_appointment_menu_master"
+            sequence="0"/>
+
+</odoo>
