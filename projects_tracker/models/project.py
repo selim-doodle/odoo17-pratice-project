@@ -4,7 +4,18 @@ from odoo import models, fields
 class Project(models.Model):
     _name = 'project.project'
     _description = 'Project'
+    _rec_name = 'project_title'
 
-    name = fields.Char(string='Project Name', required=True)
+    project_title = fields.Char(string='Project Name', required=True)
     signed_at = fields.Date(string="Signed at")
-    task_ids = fields.One2many('project.task', 'project_id', string="Task lines")
+    project_line_ids = fields.One2many('project.project.line', 'project_id', string="Task lines")
+
+
+class ProjectProjectLine(models.Model):
+    _name = "project.project.line"
+    _description = "Project task line"
+    _rec_name = 'task_id'
+
+    task_id = fields.Many2one('project.task')
+    assigned_date = fields.Date(string="Start date")
+    project_id = fields.Many2one('project.project', string="Projects")

@@ -3,12 +3,13 @@
     'website': 'www.facebook.com',
     'author': 'Selim Reza',
     'data': [
+        'security/ir.model.access.csv',
         'views/menu.xml',
         'views/project.xml',
         'views/task.xml',
-        'security/ir.model.access.csv',
+
     ],
-    'depends': [],
+    'depends': ['base'],
     'application': True,
     'sequence': -3,
 }

@@ -7,4 +7,3 @@ class Task(models.Model):
 
     name = fields.Char(string='Task Name')
     time_required = fields.Integer(string="Required time(Hour)")
-    project_id = fields.Many2one('project.project', string="Projects")

@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 projects_tracker.access_project_project,access_project_project,projects_tracker.model_project_project,base.group_user,1,1,1,1
 projects_tracker.access_project_task,access_project_task,projects_tracker.model_project_task,base.group_user,1,1,1,1
+projects_tracker.access_project_project_line,access_project_project_line,projects_tracker.model_project_project_line,base.group_user,1,1,1,1
