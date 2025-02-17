@@ -10,7 +10,8 @@
                 <sheet>
                     <group>
                         <field name="project_title"/>
-                        <field name="signed_at"/>
+                        <field name="signed_at" groups="base.group_no_one"/>
+                        <field name="hide_required_time"/>
                     </group>
                     <notebook>
                         <page string="Project Task" name="sequence1">
@@ -18,14 +19,14 @@
                                 <tree editable="bottom">
                                     <field name="task_id"/>
                                     <field name="assigned_date"/>
-                                    <field name="required_time"/>
+                                    <field name="required_time" column_invisible="parent.hide_required_time"/>
                                 </tree>
                                 <form>
                                     <group>
                                         <group>
                                             <field name="task_id"/>
                                             <field name="assigned_date"/>
-                                            <field name="required_time"/>
+                                            <field name="required_time" column_invisible="parent.hide_required_time"/>
                                         </group>
 
                                     </group>
@@ -45,6 +46,7 @@
             <tree>
                 <field name="project_title"/>
                 <field name="signed_at"/>
+                <field name="hide_required_time"/>
             </tree>
         </field>
     </record>
