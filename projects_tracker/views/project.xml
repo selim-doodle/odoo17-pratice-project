@@ -18,12 +18,14 @@
                                 <tree editable="bottom">
                                     <field name="task_id"/>
                                     <field name="assigned_date"/>
+                                    <field name="required_time"/>
                                 </tree>
                                 <form>
                                     <group>
                                         <group>
                                             <field name="task_id"/>
                                             <field name="assigned_date"/>
+                                            <field name="required_time"/>
                                         </group>
 
                                     </group>
@@ -31,23 +33,6 @@
                             </field>
                         </page>
                     </notebook>
-
-                    <!--                    <notebook>-->
-                    <!--                        <page string="Tasks" name="task">-->
-                    <!--                            <field name="project_line_ids">-->
-                    <!--                                <tree>-->
-                    <!--                                    <field name="task_id"/>-->
-                    <!--                                    <field name="assigned_date"/>-->
-                    <!--                                </tree>-->
-                    <!--                                <form>-->
-                    <!--                                    <group>-->
-                    <!--                                        <field name="task_id"/>-->
-                    <!--                                        <field name="assigned_date"/>-->
-                    <!--                                    </group>-->
-                    <!--                                </form>-->
-                    <!--                            </field>-->
-                    <!--                        </page>-->
-                    <!--                    </notebook>-->
                 </sheet>
             </form>
         </field>

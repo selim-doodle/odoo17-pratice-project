@@ -19,3 +19,4 @@ class ProjectProjectLine(models.Model):
     task_id = fields.Many2one('project.task')
     assigned_date = fields.Date(string="Start date")
     project_id = fields.Many2one('project.project', string="Projects")
+    required_time = fields.Integer(related="task_id.time_required", string="Required time")
