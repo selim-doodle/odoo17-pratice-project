@@ -12,3 +12,4 @@ class Student(models.Model):
     gender = fields.Selection(GENDER_SELECTION, string="Select gender")
     admission_date = fields.Date(string="Admission date")
     className = fields.Many2one('school.classroom', string="Class")
+    tag_ids = fields.Many2many('school.tag', string="Select tags")

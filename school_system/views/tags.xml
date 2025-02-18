@@ -2,6 +2,32 @@
 
 <odoo>
 
+    <record id="view_school_tag_form" model="ir.ui.view">
+        <field name="name">Tags</field>
+        <field name="model">school.tag</field>
+        <field name="arch" type="xml">
+            <form string="All Tags">
+                <sheet>
+                    <group>
+                        <field name="tag_title"/>
+                        <field name="color" widget="color_picker"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_school_tag_tree" model="ir.ui.view">
+        <field name="name">Tags</field>
+        <field name="model">school.tag</field>
+        <field name="arch" type="xml">
+            <tree string="All Tags">
+                <field name="tag_title"/>
+                <field name="color" widget="color_picker"/>
+            </tree>
+        </field>
+    </record>
+
     <record id="action_tag" model="ir.actions.act_window">
         <field name="name">Tags</field>
         <field name="res_model">school.tag</field>
