@@ -18,6 +18,11 @@
                         <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                     </group>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                    <field name="activity_ids"/>
+                </div>
             </form>
         </field>
     </record>
@@ -33,6 +38,7 @@
                 <field name="gender"/>
                 <field name="admission_date"/>
                 <field name="className"/>
+                <field name="activity_ids" widget="list_activity"/>
             </tree>
         </field>
     </record>

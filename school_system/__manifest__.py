@@ -17,5 +17,5 @@
         'views/tags.xml',
         'security/ir.model.access.csv',
     ],
-    'depends': [],
+    'depends': ['mail'],
 }

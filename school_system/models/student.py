@@ -1,11 +1,13 @@
 from odoo import api, models, fields
 from .constants import GENDER_SELECTION
 
+
 class Student(models.Model):
     _name = 'school.student'
     _description = 'School student information'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
 
-    name = fields.Char(string="Student name")
+    name = fields.Char(string="Student name", tracking=True)
     profile_pic = fields.Image("Upload Image")
     dob = fields.Date(string="Date of Birth")
     regular = fields.Boolean("Regular")
