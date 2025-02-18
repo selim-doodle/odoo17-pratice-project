@@ -43,4 +43,10 @@
             parent="menu_school_root"
             sequence="5"/>
 
+    <menuitem
+            id="menu_school_tag_master"
+            name="Tags"
+            parent="menu_school_root"
+            sequence="6"/>
+
 </odoo>

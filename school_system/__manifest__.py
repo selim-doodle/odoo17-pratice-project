@@ -14,6 +14,7 @@
         'views/classroom.xml',
         'views/section.xml',
         'views/course.xml',
+        'views/tags.xml',
         'security/ir.model.access.csv',
     ],
     'depends': [],

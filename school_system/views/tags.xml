@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="action_tag" model="ir.actions.act_window">
+        <field name="name">Tags</field>
+        <field name="res_model">school.tag</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_tag" name="Tag" parent="menu_school_tag_master" action="action_tag"/>
+
+</odoo>
