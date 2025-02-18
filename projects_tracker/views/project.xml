@@ -11,6 +11,8 @@
                     <group>
                         <field name="project_title"/>
                         <field name="signed_at" groups="base.group_no_one"/>
+                        <field name="color" widget="color_picker"/>
+                        <field name="color2" widget="color"/>
                         <field name="hide_required_time"/>
                     </group>
                     <notebook>
@@ -46,6 +48,8 @@
             <tree>
                 <field name="project_title"/>
                 <field name="signed_at"/>
+                <field name="color" widget="color_picker"/>
+                <field name="color2" widget="color"/>
                 <field name="hide_required_time"/>
             </tree>
         </field>

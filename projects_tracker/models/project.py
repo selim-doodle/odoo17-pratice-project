@@ -10,6 +10,8 @@ class Project(models.Model):
 
     project_title = fields.Char(string='Project Name', required=True)
     signed_at = fields.Date(string="Signed at")
+    color = fields.Integer("Pic color")
+    color2 = fields.Char("Pic color")
     project_line_ids = fields.One2many('project.project.line', 'project_id', string="Task lines")
     hide_required_time = fields.Boolean(default=False, string="Hide required time")
 
