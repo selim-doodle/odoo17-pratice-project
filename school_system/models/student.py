@@ -13,5 +13,6 @@ class Student(models.Model):
     regular = fields.Boolean("Regular")
     gender = fields.Selection(GENDER_SELECTION, string="Select gender")
     admission_date = fields.Date(string="Admission date")
+    image = fields.Image(string="Add Image")
     className = fields.Many2one('school.classroom', string="Class")
     tag_ids = fields.Many2many('school.tag', string="Select tags")
