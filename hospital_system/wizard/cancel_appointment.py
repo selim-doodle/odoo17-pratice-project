@@ -7,7 +7,7 @@ class CancelAppointmentWizard(models.TransientModel):
     _rec_name = "appointment_id"
 
     appointment_id = fields.Many2one('hospital.appointment', string="Appointment")
-
+    reason = fields.Text("Cancel reason")
 
     def action_cancel(self):
         return

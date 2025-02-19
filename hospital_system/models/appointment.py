@@ -12,6 +12,10 @@ class Appointment(models.Model):
     pharmacy_line_ids = fields.One2many("appointment.pharmacy.line", "appointment_id", string="Pharmacy Lines")
     prescription = fields.Html("Prescription")
 
+    def cancel_appointment(self):
+        action = self.env.ref('hospital_system.action_hospital_cancel_appointment_view').read()[0]
+        return action
+
 
 class AppointmentLine(models.Model):
     _name = "appointment.pharmacy.line"
