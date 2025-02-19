@@ -31,7 +31,9 @@
                             </field>
                         </page>
                         <page string="Sequence 2" name="sequence2">
-
+                            <field name="prescription"
+                                   options="{'resizable': false, 'collaborative': true, 'codeview': true}"
+                                   placeholder="Add prescription info"/>
                         </page>
                     </notebook>
                 </sheet>

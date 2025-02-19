@@ -10,6 +10,7 @@ class Appointment(models.Model):
     admitted = fields.Datetime(string="Admitted at")
     room_no = fields.Char(string="Room no.")
     pharmacy_line_ids = fields.One2many("appointment.pharmacy.line", "appointment_id", string="Pharmacy Lines")
+    prescription = fields.Html("Prescription")
 
 
 class AppointmentLine(models.Model):
