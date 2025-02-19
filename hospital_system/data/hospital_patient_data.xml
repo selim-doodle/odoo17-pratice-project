@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="patient_1" model="hospital.patient">
+        <field name="name">John Doe</field>
+        <field name="contact">+8801712345678</field>
+    </record>
+
+    <record id="patient_2" model="hospital.patient">
+        <field name="name">Jane Smith</field>
+        <field name="contact">+8801912345678</field>
+    </record>
+
+    <record id="patient_3" model="hospital.patient">
+        <field name="name">A. Rahman</field>
+        <field name="contact">+8801912345678</field>
+    </record>
+
+    <record id="patient_4" model="hospital.patient">
+        <field name="name">Saif Khan</field>
+        <field name="contact">+8801912345678</field>
+    </record>
+
+    <record id="patient_5" model="hospital.patient">
+        <field name="name">Real Romjan</field>
+        <field name="contact">+8801912345678</field>
+    </record>
+</odoo>
