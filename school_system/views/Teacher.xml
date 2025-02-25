@@ -37,6 +37,17 @@
                         </page>
                         <page name="public2" string="Work Information2">
 
+                            <group>
+                                <group>
+                                    <group>
+                                        <separator string="Personal Details"/>
+                                        <group class="my_custom_1">
+                                            <field name="gender"/>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+
                         </page>
                     </notebook>
                 </sheet>

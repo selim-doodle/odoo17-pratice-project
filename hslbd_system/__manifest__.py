@@ -1,5 +1,7 @@
 {
     'name': 'hslbd system',
-    'data': [],
+    'data': [
+        'views/custom_teacher.xml',
+    ],
     'depends': ['school_system'],
 }
