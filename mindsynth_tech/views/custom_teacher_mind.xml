@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="school_teacher_inherit_form_division" model="ir.ui.view">
+        <field name="name">school.teacher.inherit.division</field>
+        <field name="model">school.teacher</field>
+        <field name="inherit_id" ref="hslbd_system.inherit_school_teacher_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='home_town']" position="after">
+                <field name="division"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

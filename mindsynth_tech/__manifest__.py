@@ -1,5 +1,7 @@
 {
     'name': 'mindsynth tech',
-    'data': [],
+    'data': [
+        'views/custom_teacher_mind.xml',
+    ],
     'depends': ['school_system'],
 }
