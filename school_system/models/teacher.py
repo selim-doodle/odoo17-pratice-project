@@ -12,3 +12,6 @@ class Teacher(models.Model):
     department = fields.Char(string="Department")
     active = fields.Boolean(string="Archived", default="False")
     course_ids = fields.One2many('school.course', 'teacher_id', string='Assigned courses')
+
+    def myFun(self):
+        print("Hello All! this is from school.teacher class")

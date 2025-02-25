@@ -46,6 +46,9 @@
                                         </group>
                                     </group>
                                 </group>
+                                <group>
+                                    <button name="myFun" string="Log in Terminal" type="object" class="btn-secondary"/>
+                                </group>
                             </group>
 
                         </page>
