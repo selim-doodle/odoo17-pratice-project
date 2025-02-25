@@ -10,6 +10,7 @@
                     <field name="profile_pic" widget="image" class="oe_avatar"/>
                     <group>
                         <field name="name"/>
+                        <field name="ref" readonly="True"/>
                         <field name="dob"/>
                         <field name="regular" widget="boolean_toggle"/>
                         <field name="gender"/>
@@ -33,6 +34,7 @@
         <field name="arch" type="xml">
             <tree string="Students" sample="1">
                 <field name="name"/>
+                <field name="ref"/>
                 <field name="dob"/>
                 <field name="regular"/>
                 <field name="gender"/>

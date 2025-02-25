@@ -16,3 +16,9 @@ class Student(models.Model):
     image = fields.Image(string="Add Image")
     className = fields.Many2one('school.classroom', string="Class")
     tag_ids = fields.Many2many('school.tag', string="Select tags")
+    ref = fields.Char("Reference")
+
+
+    def create(self, vals):
+        vals['ref'] = self.env['ir.sequence'].next_by_code('school.student.sequence')
+        return super(Student, self).create(vals)

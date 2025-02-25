@@ -8,6 +8,8 @@
     'version': '1.2',
     'category': 'managemental',
     'data': [
+        'security/ir.model.access.csv',
+        'data/student_sequence_data.xml',
         'views/menu.xml',
         'views/teacher.xml',
         'views/student.xml',
@@ -15,7 +17,6 @@
         'views/section.xml',
         'views/course.xml',
         'views/tags.xml',
-        'security/ir.model.access.csv',
     ],
     'depends': ['mail'],
 }
